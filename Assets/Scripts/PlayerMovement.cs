@@ -6,24 +6,24 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody playerRigi;
 
     [Header("Input Action")]
-    PlayerFieldControl actions;
-    InputAction moveAction;
-    InputAction jumpAction;
-    InputAction sprintAction;
+    private PlayerFieldControl actions;
+    private InputAction moveAction;
+    private InputAction jumpAction;
+    private InputAction sprintAction;
 
     [Header("Animation")]
     [SerializeField] Animator animator;
 
     [Header("Movement")]
-    public Vector2 moveVactor;
-    public float moveAcceleration = 50f;
-    public float warkMaxSpeed = 2f;
-    public float sprintMaxSpeed = 5f;
+    [SerializeField] Vector2 moveVactor;
+    [SerializeField] float moveAcceleration = 50f;
+    [SerializeField] float warkMaxSpeed = 2f;
+    [SerializeField] float sprintMaxSpeed = 5f;
     [SerializeField] float rotationSpeed = 720f;
 
     [Header("Jump")]
-    public float jumpForce = 10f;
-    public bool isGround = true;
+    [SerializeField] float jumpForce = 10f;
+    [SerializeField] bool isGround = true;
 
     [SerializeField] Transform cameraTransform;
 
